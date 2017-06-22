@@ -4,7 +4,7 @@ public class DEV1 {
       if (i % 3 == 0 && i % 5 == 0) { 
         System.out.println("Tutti-Frutti");
       } else if (i % 3 == 0) { 
-        System.out.println("Titti");
+        System.out.println("Tutti");
       } else if (i % 5 == 0) {
         System.out.println("Frutti");
       } else {
