@@ -15,7 +15,7 @@ public class Sequence {
     }
   } catch (NumberFormatException e) {
       System.err.println("You entered an invalid number format.");
-     return;
+      return;
   }
     System.out.println("The entered sequence of numbers is decreasing.");
   }
