@@ -8,7 +8,7 @@ public class Sequence {
   String[] sequenceParts = sequence.split(" ");
   try {
     for (int i = 1; i < sequenceParts.length; i++) {
-      if (Integer.parseInt(sequenceParts[i]) > Integer.parseInt(sequenceParts[i - 1])) {
+      if (Integer.parseInt(sequenceParts[i]) < Integer.parseInt(sequenceParts[i - 1])) {
         System.out.println("The entered sequence of numbers is not non-decreasing.");
         return;
       }
