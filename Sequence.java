@@ -14,8 +14,8 @@ public class Sequence {
         }
       }
     } catch (NumberFormatException e) {
-        System.err.println("You entered an invalid number format.");
-        return;
+      System.err.println("You entered an invalid number format.");
+      return;
     }
     System.out.println("The entered sequence of numbers does not decreasing.");
   }
