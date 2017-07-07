@@ -20,7 +20,7 @@ public class SequenceAnalysis {
    * Displays a message about the type of sequence.
    * @param testSequence is a type of sequence.
    */
-  public void messages(boolean testSequence) {
+  public void output(boolean testSequence) {
     if (testSequence == true) {
       System.out.println("The entered sequence of numbers is not nondecreasing.");
     } else {
