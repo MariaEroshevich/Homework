@@ -5,20 +5,16 @@ public class SequenceAnalysis {
   /**
    * Defines the input sequence.
    * @param sequenceParts the sequence that we chek.
-   * @return testSequence if the sequence decreases.
+   * @return true, if the sequence decreases.
    */
   public boolean sequenceCheck(String[] sequenceParts) {
-    boolean testSequence = true;
     for (int i = 1; i < sequenceParts.length; i++) {
       if (Integer.parseInt(sequenceParts[i]) <= Integer.parseInt(sequenceParts[i - 1])) {
-        testSequence = true;
-      } else {
-        testSequence = false;
-      }   
+        return true;
+      }     
     } 
-    return testSequence;
+    return false;
   }
-  
 
   /**
    * Displays a message about the type of sequence.
