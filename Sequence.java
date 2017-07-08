@@ -2,11 +2,12 @@ public class Sequence {
   public static void main(String[] args) {
     try {
       SequenceAnalysis sequenceAnalysis = new SequenceAnalysis();
+      OutputMessages outputMessages = new OutputMessages();
       if (args.length != 0) {
-        sequenceAnalysis.output(sequenceAnalysis.sequenceCheck(args));
+        outputMessages.outputMessages(sequenceAnalysis.sequenceCheck(args));
       } else {
         ReadFromTheConsole readFromTheConsole = new ReadFromTheConsole();
-        sequenceAnalysis.output(sequenceAnalysis.sequenceCheck(readFromTheConsole.read()));
+        outputMessages.outputMessages(sequenceAnalysis.sequenceCheck(readFromTheConsole.read()));
       }
     } catch (NumberFormatException e) {
       System.out.println("You entered an invalid number format.");
