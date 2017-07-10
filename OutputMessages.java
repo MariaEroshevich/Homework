@@ -4,10 +4,10 @@
 public class OutputMessages {
   /**
    * Displays the type of sequence.
-   * @param testSequence flag for output of sequence type.
+   * @param typeOfSequence flag for output of sequence type.
    */
-  public void outputMessages(boolean testSequence) {
-    if (testSequence) {
+  public void outputMessages(boolean typeOfSequence) {
+    if (typeOfSequence) {
       System.out.println("The entered sequence of numbers is not nondecreasing.");
     } else {
       System.out.println("The entered sequence of numbers is does not decreasing.");
