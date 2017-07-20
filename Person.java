@@ -27,6 +27,9 @@ public class Person {
   
   /**
    * The method verify the entered data.
+   * @param firstName - entered person firstname.
+   * @param lastName - entered person lastname.
+   * @param year - entered person year of birth.
    */
   
   public void verification(String firstName, String lastName, int year) {
